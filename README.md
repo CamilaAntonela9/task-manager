@@ -16,51 +16,50 @@ CALIFICACIÓN:
 
 
 
-
-TÍTULO
+## Desarrollar un Sistema de Gestión de Tareas (To-Do List) con LitElement
 
 Obando Buitron Camila Antonela
 
 
 
-RESUMEN
+## RESUMEN
 
 En el presente laboratorio se desarrolló una aplicación web de gestión de tareas utilizando LitElement, un estándar moderno para la creación de Web Components. El propósito fue migrar una aplicación previa escrita con JavaScript tradicional y TailwindCSS hacia una arquitectura basada en componentes reutilizables, encapsulados y mantenibles. Se implementaron componentes personalizados como <espe-layout>, <espe-task-app>, <espe-task-list>, <espe-task-item>, <espe-task-modal> y <espe-task-detail>, cada uno con una responsabilidad específica. Durante el proceso se utilizó un bundler (Webpack) para compilar los módulos y se configuró un entorno local con dependencias modernas. Como resultado, se obtuvo una interfaz modular, eficiente y visualmente atractiva, alineada a buenas prácticas de desarrollo web integrativo.
 
 Palabras Claves: Web Components, LitElement, Aplicación de Tareas
 
 
-INTRODUCCIÓN: 
+## INTRODUCCIÓN: 
 El presente laboratorio corresponde a la práctica número uno del módulo de Programación Integrativa de Componentes, en el cual se abordó el desarrollo de una aplicación web basada en componentes. El objetivo principal fue migrar una implementación tradicional de una lista de tareas (To-Do List), que utilizaba HTML y JavaScript clásicos, hacia una estructura moderna compuesta por Web Components usando LitElement. Esta migración no solo implicó una reorganización del código, sino también la adopción de conceptos como encapsulamiento de estilos, propiedades reactivas y comunicación entre componentes mediante eventos personalizados. La práctica fomentó el manejo disciplinado de estructuras modulares y el uso de herramientas actuales como NPM, Webpack y TailwindCSS.
 
-OBJETIVO(S):
-OBJETIVO GENERAL 
+## OBJETIVO(S):
+### OBJETIVO GENERAL 
 Desarrollar una aplicación web modular de tareas utilizando LitElement y Web Components, integrando diseño, lógica y estructura en componentes reutilizables.
-OBJETIVOS ESPECÍFICOS
+### OBJETIVOS ESPECÍFICOS
 Migrar la lógica de la aplicación previa de tareas hacia un enfoque modular basado en componentes.
 Implementar componentes funcionales y estilizados que interactúen entre sí (layout, listas, items, modales).
 Configurar un entorno de desarrollo con Webpack y NPM para compilar y servir la aplicación.
 
 
 
-MARCO TEÓRICO:
-Web Components
+## TEÓRICO:
+### Web Components
 Es una tecnología que permite crear elementos personalizados reutilizables y encapsulados, utilizando estándares como Custom Elements, Shadow DOM y HTML Templates. Con ellos se puede construir interfaces complejas que mantengan un alto nivel de organización y cohesión.
 El desarrollo web moderno ha evolucionado hacia arquitecturas basadas en componentes, permitiendo mayor reutilización, encapsulamiento y mantenibilidad del código. Este enfoque se fundamenta en la creación de interfaces modulares donde cada parte de la interfaz se construye como un bloque reutilizable. La especificación Web Components, respaldada por el W3C, proporciona tecnologías nativas como Custom Elements, Shadow DOM y HTML Templates para lograr este objetivo (W3C, 2021).
 
-Lit Element
+### Lit Element
 LitElement es una librería basada en Web Components que simplifica su implementación utilizando clases de JavaScript modernas y una sintaxis declarativa para manejar propiedades reactivas, eventos y estilos encapsulados. Esta herramienta permite crear componentes altamente eficientes y compatibles con todos los navegadores modernos sin necesidad de frameworks pesados (Google, 2023).
 
 En el contexto del diseño visual y la experiencia de usuario, se utilizó TailwindCSS, una librería CSS utilitaria que permite componer estilos directamente en el HTML, eliminando la necesidad de escribir hojas de estilo personalizadas para cada componente. Esta metodología ayuda a mantener consistencia visual y acelera el desarrollo responsivo (Tailwind Labs, 2023).
 
-WebPack
+### WebPack
 Webpack es un empaquetador de módulos que permite compilar los archivos ES Modules, gestionando sus dependencias para ser ejecutados correctamente en el navegador.
 TailwindCSS facilita el desarrollo de interfaces mediante clases utilitarias, permitiendo estilos altamente personalizables sin necesidad de escribir CSS desde cero.
 
 Estos conceptos se aplicaron para dividir una aplicación en componentes tales como <espe-layout>, encargado del encabezado y diseño; <espe-task-list> y <espe-task-item>, responsables de mostrar las tareas; <espe-task-modal> y <espe-task-detail> para gestionar interacciones. Se manejaron eventos personalizados para permitir comunicación entre ellos y mantener la lógica centralizada en <espe-task-app>.
 
 
-DESCRIPCIÓN DEL PROCEDIMIENTO: 
+## DESCRIPCIÓN DEL PROCEDIMIENTO: 
 
 
 Instalar Lit Element
@@ -340,18 +339,7 @@ Código
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-Configuración del archivo Webpack.config.js
+### Configuración del archivo Webpack.config.js
 
 Código
 const path = require('path');
@@ -392,20 +380,20 @@ module.exports = {
 
 
 
-ANÁLISIS DE RESULTADOS: 
+## ANÁLISIS DE RESULTADOS: 
 Durante el desarrollo de la práctica, se logró implementar exitosamente una aplicación web modular utilizando Web Components con LitElement. Se obtuvo una vista dinámica de tareas, permitiendo su creación, edición, visualización detallada y eliminación. Se emplearon propiedades reactivas para sincronizar el estado de la aplicación y eventos personalizados para comunicar componentes de forma encapsulada. La lógica separada en componentes facilitó el mantenimiento del código. Además, mediante Webpack se logró compilar los módulos y generar un bundle óptimo para navegador, lo que permitió que toda la aplicación funcione correctamente como una SPA (Single Page Application).
 
-DISCUSIÓN: 
+## DISCUSIÓN: 
 La implementación de LitElement para construir una aplicación basada en componentes permitió contrastar en la práctica las ventajas de la programación modular y la encapsulación de lógica. En comparación con la programación clásica basada en manipulación directa del DOM, el uso de propiedades reactivas, eventos personalizados y Shadow DOM permitió una mayor eficiencia y claridad en la estructura del código. Asimismo, el diseño visual apoyado en Tailwind CSS ayudó a mantener una interfaz moderna, responsiva y coherente con principios de diseño institucional. El uso de Webpack como empaquetador fue clave para resolver los errores de importación de módulos y permitir la ejecución correcta del proyecto.
 
-CONCLUSIONES: 
+## CONCLUSIONES: 
 1. La implementación de LitElement como base para construir la aplicación de tareas demostró la capacidad de los Web Components para estructurar interfaces complejas mediante componentes reutilizables, encapsulados y fácilmente mantenibles.
 
 2. El uso de eventos personalizados y propiedades reactivas permitió una comunicación fluida entre componentes, evidenciando cómo el enfoque declarativo mejora la legibilidad y evita acoplamientos innecesarios en la lógica de la aplicación.
 
 3. La integración con herramientas como Tailwind CSS para estilos y Webpack para el empaquetado del proyecto fue esencial para completar los objetivos técnicos planteados, permitiendo desplegar una aplicación moderna, funcional y adaptada al flujo de desarrollo actual.
 
-BIBLIOGRAFÍA: 
+## BIBLIOGRAFÍA: 
 Google. (2023). Lit documentation. Lit. https://lit.dev 
 Mozilla Developer Network. (2023). Using custom elements. MDN Web Docs. https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements 
 Tailwind Labs. (2023). Tailwind CSS documentation. Tailwind CSS. https://tailwindcss.com 
