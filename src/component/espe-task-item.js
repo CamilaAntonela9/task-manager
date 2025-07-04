@@ -17,8 +17,8 @@ export class EspeTaskItem extends LitElement {
           <p class="task-time">${this.task.time}</p>
         </div>
         <div class="actions" @click=${e => e.stopPropagation()}>
-          <button @click=${() => this._emit('edit')}>✏️</button>
-          <button @click=${() => this._emit('delete')}>🗑️</button>
+          <button @click=${() => this._emit('edit')}>Editar</button>
+          <button @click=${() => this._emit('delete')}>Quitar</button>
         </div>
       </div>
     `;
